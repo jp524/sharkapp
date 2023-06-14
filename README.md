@@ -1,24 +1,7 @@
-# README
+# Rails Shark App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Practice app to learn how to use Active Job with Sidekiq and Redis.
 
-Things you may want to cover:
+Instructions from [Digital Ocean's Rails on Container series](https://www.digitalocean.com/community/tutorial_series/rails-on-containers) adapted for Rails 7.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+The upload of a large CSV file is queued to allow the app to run in the meantime.
