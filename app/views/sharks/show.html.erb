@@ -3,8 +3,7 @@
 <%= render @shark %>
 
 <div>
-  <%= link_to "Edit this shark", edit_shark_path(@shark) %> |
+  <%= link_to "Edit", edit_shark_path(@shark) %> |
+  <%= link_to "Destroy", @shark, data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %> |
   <%= link_to "Back to sharks", sharks_path %>
-
-  <%= button_to "Destroy this shark", @shark, method: :delete %>
 </div>

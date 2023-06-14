@@ -6,7 +6,9 @@
   <% @sharks.each do |shark| %>
     <%= render shark %>
     <p>
-      <%= link_to "Show this shark", shark %>
+      <%= link_to "Show", shark %>
+      <%= link_to "Edit", edit_shark_path(shark) %>
+      <%= link_to "Destroy", shark, data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %>
     </p>
   <% end %>
 </div>
